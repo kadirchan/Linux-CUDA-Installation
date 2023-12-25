@@ -42,33 +42,33 @@ Go to: NVIDIA [cuDNN](https://developer.nvidia.com/cudnn) home page.
 Click Download. (CUDA 12 better)
 
 Debian Local Installation:
-`sudo dpkg -i cudnn-local-repo-$distro-8.x.x.x_1.0-1_amd64.deb`
+- `sudo dpkg -i cudnn-local-repo-$distro-8.x.x.x_1.0-1_amd64.deb`
  
 Import the CUDA GPG key.
-`sudo cp /var/cudnn-local-repo-*/cudnn-local-*-keyring.gpg /usr/share/keyrings/`
+- `sudo cp /var/cudnn-local-repo-*/cudnn-local-*-keyring.gpg /usr/share/keyrings/`
 
 Refresh the repository metadata.
-`sudo apt-get update`
+- `sudo apt-get update`
 
 Install the runtime library.
-`sudo apt-get install libcudnn8=8.x.x.x-1+cudaX.Y`
+- `sudo apt-get install libcudnn8=8.x.x.x-1+cudaX.Y`
 
 Install the developer library.
-`sudo apt-get install libcudnn8-dev=8.x.x.x-1+cudaX.Y`
+- `sudo apt-get install libcudnn8-dev=8.x.x.x-1+cudaX.Y`
 
 Install the code samples.
-`sudo apt-get install libcudnn8-samples=8.x.x.x-1+cudaX.Y`
+- `sudo apt-get install libcudnn8-samples=8.x.x.x-1+cudaX.Y`
 
 ### Verifying the Installation ###
 
 Copy the cuDNN samples to a writable path.
-`cp -r /usr/src/cudnn_samples_v8/ $HOME`
+- `cp -r /usr/src/cudnn_samples_v8/ $HOME`
 
 Go to the writable path.
-`cd  $HOME/cudnn_samples_v8/mnistCUDNN`
+- `cd  $HOME/cudnn_samples_v8/mnistCUDNN`
 
 Compile the mnistCUDNN sample.
-`make clean && make`
+- `make clean && make`
 
 Run the mnistCUDNN sample.
-`./mnistCUDNN`
+- `./mnistCUDNN`
